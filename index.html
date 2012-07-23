@@ -37,7 +37,8 @@
 
 <h3>how to use</h3>
 <p>
-タイトル属性で使う事を強くオススメします。
+タイトル属性で使う事を強くオススメします。<br />
+下記のサンプルでタイトルに適用しています。タブのキャプションを10秒程度見てみてください。<br />
 </p>
 
 <pre>
@@ -52,7 +53,7 @@ $(function(){
 
 <h4>custom</h4>
 <p id="demo">
-  
+  ←Glance looks
 </p>
 <pre>
 <code>
@@ -61,7 +62,7 @@ $(function(){
   $('#demo').glance({
     //表示する文字列をArrayで宣言する。
     texts: [["(」・ω・)」うー！" , 2000 ] ,
-            "(／・ω・)／にゃー！" ] , //,各要素はString or Array["text]["waittime"]の要素にしてください。
+            "(／・ω・)／にゃー！" , //,各要素はString or Array["text]["waittime"]の要素にしてください。
             ],
     loop: 10, //何回繰り返すか
     delay: 1000 //次の表示の間隔
@@ -99,13 +100,13 @@ $(function(){
        
        //custom
        $(function(){
-        $('title').glance({
+        $('#demo').glance({
           //表示する文字列をArrayで宣言する。
           texts: [["(」・ω・)」うー！" , 2000 ] ,
-                  "(／・ω・)／にゃー！" ] , //,各要素はString or Array["text]["waittime"]の要素にしてください。
-                  ],
+                  "(／・ω・)／にゃー！"  , //,各要素はString or Array["text]["waittime"]の要素にしてください。
+                  ""],
           loop: 10, //何回繰り返すか
-          delay: 1000 //次の表示の間隔
+          delay: 1000, //次の表示の間隔
           waitTime: 1200 //defaultでの文字表示間隔(ms)
         });
       });
